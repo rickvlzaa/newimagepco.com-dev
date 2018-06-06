@@ -7,7 +7,7 @@ module.exports = {
     deploy: {
         production: {
             user: 'rick',
-            host: 'rickdev',
+            host: 'ec2-52-14-23-213.us-east-2.compute.amazonaws.com',
             key: '~/.ssh/aws_dev',
             ref: 'origin/master',
             repo: 'https://github.com/rickvlzaa/newimagepco.com-dev.git',
