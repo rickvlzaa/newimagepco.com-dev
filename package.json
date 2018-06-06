@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
-    "setup": "pm2 deploy ecosystem.config.js production setup"
+    "setup": "pm2 deploy ecosystem.config.js production setup",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "handlebars": "^4.0.11"
   },
   "devDependencies": {
     "morgan": "^1.9.0",

@@ -2,11 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
-
+const routes = require('./routes/index')
 const app = express()
 
-app.get('/app', (req, res) => {
-    res.send('<h1>New Image Painting Company</h1>').status(200)
-})
+app.use(morgan('dev'))
+
+app.use('/app', routes)
 
 app.listen(8080)
