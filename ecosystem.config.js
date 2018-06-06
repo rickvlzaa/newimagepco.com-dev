@@ -2,6 +2,7 @@ module.exports = {
     apps: [{
         name: 'newimagepco.com',
         script: './index.js'
+        
     }],
     deploy: {
         production: {
