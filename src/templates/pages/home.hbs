@@ -1,0 +1,31 @@
+
+{{#> layouts/base }}
+
+{{#*inline "head-block"}}
+    {{> includes/css/bootstrap }}
+{{/inline}}
+
+{{#*inline "content-block"}}
+    <div class="container-fuild">
+        <div class="row no-gutters">
+            <div class="col-3">
+                {{> includes/sidebar sections=sections }}
+            </div>
+            <div class="col-6">
+                <div style="padding: 0; margin: 0; height: 100vh; overflow: scroll">
+                    {{> includes/jumbotron }}
+                </div>
+            </div>
+            <div class="col-3">
+                {{> includes/news }}
+            </div>
+        </div>
+    </div>
+
+{{/inline}}
+
+{{#*inline "scripts-block"}}
+    {{> includes/js/bootstrap }}
+{{/inline}}
+
+{{/layouts/base}}
